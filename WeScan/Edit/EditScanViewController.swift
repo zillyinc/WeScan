@@ -65,6 +65,8 @@ final class EditScanViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.tintColor = zillyBlue
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissSelf))
         setupViews()
         setupConstraints()

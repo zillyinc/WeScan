@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+let zillyBlue: UIColor = UIColor(red: 24/255.0, green: 172/255.0, blue: 248/255.0, alpha: 1)
+
 final class EditColorsViewController : UIViewController {
 
     @IBOutlet private var slider: UISlider!
@@ -39,10 +41,11 @@ final class EditColorsViewController : UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.tintColor = zillyBlue
         grayOptionView.layer.borderWidth = 4.0
         colorOptionView.layer.borderWidth = 4.0
         title = NSLocalizedString("Edit Colors", comment: "")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(donePressed))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Save", comment: ""), style: .done, target: self, action: #selector(donePressed))
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissSelf))
         imageView.image = image
         updateSelectedMode()
@@ -51,11 +54,11 @@ final class EditColorsViewController : UIViewController {
     // MARK: Convenience
     private func updateSelectedMode() {
         if currentMode == .color {
-            colorOptionView.layer.borderColor = UIColor(red: 24/255.0, green: 172/255.0, blue: 248/255.0, alpha: 1).cgColor
+            colorOptionView.layer.borderColor = zillyBlue.cgColor
             grayOptionView.layer.borderColor = UIColor.clear.cgColor
         } else {
             colorOptionView.layer.borderColor = UIColor.clear.cgColor
-            grayOptionView.layer.borderColor = UIColor(red: 24/255.0, green: 172/255.0, blue: 248/255.0, alpha: 1).cgColor
+            grayOptionView.layer.borderColor = zillyBlue.cgColor
         }
         view.layoutIfNeeded()
     }
