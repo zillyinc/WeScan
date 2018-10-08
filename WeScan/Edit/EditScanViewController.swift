@@ -34,7 +34,7 @@ final class EditScanViewController: UIViewController {
     }()
     
     lazy private var nextButton: UIBarButtonItem = {
-        let title = NSLocalizedString("wescan.edit.button.done", tableName: nil, bundle: Bundle(for: EditScanViewController.self), value: "Done", comment: "A generic done button")
+        let title = NSLocalizedString("wescan.edit.button.save", tableName: nil, bundle: Bundle(for: EditScanViewController.self), value: "Save", comment: "A generic save button")
         let button = UIBarButtonItem(title: title, style: .done, target: self, action: #selector(finishEditing))
         button.tintColor = navigationController?.navigationBar.tintColor
         return button
@@ -65,7 +65,7 @@ final class EditScanViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissSelf))
         setupViews()
         setupConstraints()
         title = NSLocalizedString("wescan.edit.title", tableName: nil, bundle: Bundle(for: EditScanViewController.self), value: "Edit Scan", comment: "The title of the EditScanViewController")
@@ -121,6 +121,10 @@ final class EditScanViewController: UIViewController {
     }
     
     // MARK: - Actions
+
+    @objc private func dismissSelf() {
+        dismiss(animated: true, completion: nil)
+    }
     
     @objc func finishEditing() {
         guard let quad = quadView.quad,

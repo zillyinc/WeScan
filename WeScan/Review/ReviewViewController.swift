@@ -115,14 +115,12 @@ final class ReviewViewController: UIViewController {
         NSLayoutConstraint.activate(imageViewConstraints)
     }
 
-    private var shouldShowLoseChangesAlert = false
-
     // MARK: - Actions
+
     @objc private func editEdges() {
-        guard !shouldShowLoseChangesAlert else { showLooseChangesAlert(); return }
         let imageToEdit = results.originalImage
         let editVC = EditScanViewController(image: imageToEdit.applyingPortraitOrientation(), quad: quad)
-        editVC.didEditResults = { [unowned self] results in self.results = results; self.imageView.image = results.scannedImage; self.originalScannedImage = results.scannedImage; self.shouldShowLoseChangesAlert = false }
+        editVC.didEditResults = { [unowned self] results in self.results = results; self.imageView.image = results.scannedImage; self.originalScannedImage = results.scannedImage }
         editVC.didEditQuad = { [unowned self] quad in self.quad = quad }
         let navigationController = UINavigationController(rootViewController: editVC)
         present(navigationController, animated: true)
@@ -130,7 +128,7 @@ final class ReviewViewController: UIViewController {
 
     @objc private func editColors() {
         let vc = EditColorsViewController(image: originalScannedImage)
-        vc.didFinishEditingImageHandler = { [unowned self] image in self.results.scannedImage = image; self.imageView.image = image; self.shouldShowLoseChangesAlert = true }
+        vc.didFinishEditingImageHandler = { [unowned self] image in self.results.scannedImage = image; self.imageView.image = image }
         let navigationController = UINavigationController(rootViewController: vc)
         present(navigationController, animated: true, completion: nil)
     }
@@ -139,15 +137,6 @@ final class ReviewViewController: UIViewController {
         if let imageScannerController = navigationController as? ImageScannerController {
             imageScannerController.imageScannerDelegate?.imageScannerController(imageScannerController, didFinishScanningWithResults: results)
         }
-    }
-
-    private func showLooseChangesAlert() {
-        let alertController = UIAlertController(title: NSLocalizedString("Warning", comment: ""), message: NSLocalizedString("Your color changes will be reset. Do you wish to continue?", comment: ""), preferredStyle: .alert)
-        let continueAction = UIAlertAction(title: NSLocalizedString("Continue", comment: ""), style: .default) { [unowned self] _ in self.shouldShowLoseChangesAlert = false;  self.editEdges() }
-        let cancel = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel) { _ in }
-        alertController.addAction(cancel)
-        alertController.addAction(continueAction)
-        present(alertController, animated: true, completion: nil)
     }
 
 }
