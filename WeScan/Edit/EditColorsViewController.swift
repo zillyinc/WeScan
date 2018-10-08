@@ -29,7 +29,7 @@ final class EditColorsViewController : UIViewController {
     // MARK: Lifecycle
     init(image: UIImage) {
         self.image = image
-        let bundle = Bundle(identifier: "org.cocoapods.WeScan")
+        let bundle = Bundle(for: EditColorsViewController.self)
         super.init(nibName: "EditColorsViewController", bundle: bundle)
     }
 
