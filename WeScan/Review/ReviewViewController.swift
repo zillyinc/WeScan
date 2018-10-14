@@ -94,20 +94,33 @@ final class ReviewViewController: UIViewController {
             view.leadingAnchor.constraint(equalTo: imageView.leadingAnchor)
         ]
 
-        let editColorsButtonConstraints = [
-            editColorsButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
-            editColorsButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            editColorsButton.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            editColorsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            editColorsButton.heightAnchor.constraint(equalToConstant: 65.0)
-        ]
+        let editColorsBottomAnchor: NSLayoutConstraint = {
+            if #available(iOS 11.0, *) {
+                return editColorsButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            } else {
+                return editColorsButton.bottomAnchor.constraint(equalTo: view.bottomAnchor)
 
+            }
+        }()
+        let editColorsButtonConstraints = [
+            editColorsBottomAnchor,
+            editColorsButton.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            editColorsButton.heightAnchor.constraint(equalToConstant: 65.0),
+            editColorsButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width/2)
+        ]
+        let editEdgesBottomAnchor: NSLayoutConstraint = {
+            if #available(iOS 11.0, *) {
+                return editEdgesButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            } else {
+                return editEdgesButton.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+
+            }
+        }()
         let editEdgesButtonConstraints = [
-            editEdgesButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -65.0),
-            editEdgesButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            editEdgesButton.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            editEdgesBottomAnchor,
             editEdgesButton.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            editEdgesButton.heightAnchor.constraint(equalToConstant: 65.0)
+            editEdgesButton.heightAnchor.constraint(equalToConstant: 65.0),
+            editEdgesButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width/2)
         ]
 
         NSLayoutConstraint.activate(editColorsButtonConstraints)
