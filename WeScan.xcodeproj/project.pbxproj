@@ -54,18 +54,8 @@
 		F31B05B7216A95EF00A1D2A3 /* EditColorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F31B05B4216A95EF00A1D2A3 /* EditColorsViewController.xib */; };
 		F31B05B9216A95EF00A1D2A3 /* EditColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B05B5216A95EF00A1D2A3 /* EditColorsViewController.swift */; };
 		F3C98571216A1F16004519B5 /* UIFont+Tellus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C98570216A1F16004519B5 /* UIFont+Tellus.swift */; };
-		F3C98588216A22C3004519B5 /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3C98578216A21B7004519B5 /* CircularStd-Book.otf */; };
-		F3C98589216A22C3004519B5 /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3C98578216A21B7004519B5 /* CircularStd-Book.otf */; };
-		F3C9858A216A22C4004519B5 /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3C98578216A21B7004519B5 /* CircularStd-Book.otf */; };
-		F3C9858B216A22C6004519B5 /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3C98579216A21B7004519B5 /* CircularStd-Black.otf */; };
-		F3C9858C216A22C7004519B5 /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3C98579216A21B7004519B5 /* CircularStd-Black.otf */; };
-		F3C9858D216A22C7004519B5 /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3C98579216A21B7004519B5 /* CircularStd-Black.otf */; };
-		F3C9858E216A22CA004519B5 /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3C9857A216A21B7004519B5 /* CircularStd-Bold.otf */; };
-		F3C9858F216A22CA004519B5 /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3C9857A216A21B7004519B5 /* CircularStd-Bold.otf */; };
-		F3C98590216A22CB004519B5 /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3C9857A216A21B7004519B5 /* CircularStd-Bold.otf */; };
-		F3C98591216A22CD004519B5 /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3C9857B216A21B7004519B5 /* CircularStd-Medium.otf */; };
-		F3C98592216A22CE004519B5 /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3C9857B216A21B7004519B5 /* CircularStd-Medium.otf */; };
-		F3C98593216A22CF004519B5 /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3C9857B216A21B7004519B5 /* CircularStd-Medium.otf */; };
+		F3E91FEA217893C5004B4ADF /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E91FE621789287004B4ADF /* OpenSans-Bold.ttf */; };
+		F3E91FEB217893C8004B4ADF /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E91FE621789287004B4ADF /* OpenSans-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,10 +148,9 @@
 		F31B05B4216A95EF00A1D2A3 /* EditColorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditColorsViewController.xib; sourceTree = "<group>"; };
 		F31B05B5216A95EF00A1D2A3 /* EditColorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditColorsViewController.swift; sourceTree = "<group>"; };
 		F3C98570216A1F16004519B5 /* UIFont+Tellus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Tellus.swift"; sourceTree = "<group>"; };
-		F3C98578216A21B7004519B5 /* CircularStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.otf"; sourceTree = "<group>"; };
-		F3C98579216A21B7004519B5 /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
-		F3C9857A216A21B7004519B5 /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
-		F3C9857B216A21B7004519B5 /* CircularStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.otf"; sourceTree = "<group>"; };
+		F3E91FE621789287004B4ADF /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		F3E91FE721789287004B4ADF /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		F3E91FE821789287004B4ADF /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,10 +329,9 @@
 		F3C98577216A21B7004519B5 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				F3C98578216A21B7004519B5 /* CircularStd-Book.otf */,
-				F3C98579216A21B7004519B5 /* CircularStd-Black.otf */,
-				F3C9857A216A21B7004519B5 /* CircularStd-Bold.otf */,
-				F3C9857B216A21B7004519B5 /* CircularStd-Medium.otf */,
+				F3E91FE621789287004B4ADF /* OpenSans-Bold.ttf */,
+				F3E91FE821789287004B4ADF /* OpenSans-Regular.ttf */,
+				F3E91FE721789287004B4ADF /* OpenSans-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -473,12 +461,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1D4BCC5202C4F3800FCDDEC /* LaunchScreen.storyboard in Resources */,
-				F3C9858B216A22C6004519B5 /* CircularStd-Black.otf in Resources */,
-				F3C98588216A22C3004519B5 /* CircularStd-Book.otf in Resources */,
-				F3C9858E216A22CA004519B5 /* CircularStd-Bold.otf in Resources */,
 				A1D4BCC2202C4F3800FCDDEC /* Assets.xcassets in Resources */,
+				F3E91FEB217893C8004B4ADF /* OpenSans-Bold.ttf in Resources */,
 				A1D4BCC0202C4F3800FCDDEC /* Main.storyboard in Resources */,
-				F3C98591216A22CD004519B5 /* CircularStd-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,12 +471,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3C9858C216A22C7004519B5 /* CircularStd-Black.otf in Resources */,
-				F3C9858F216A22CA004519B5 /* CircularStd-Bold.otf in Resources */,
 				F31B05B7216A95EF00A1D2A3 /* EditColorsViewController.xib in Resources */,
-				F3C98592216A22CE004519B5 /* CircularStd-Medium.otf in Resources */,
-				F3C98589216A22C3004519B5 /* CircularStd-Book.otf in Resources */,
 				A1265C822045BFEB009C4D3E /* Localizable.strings in Resources */,
+				F3E91FEA217893C5004B4ADF /* OpenSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,12 +482,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1675BAB2041693A00852865 /* Square.jpg in Resources */,
-				F3C9858D216A22C7004519B5 /* CircularStd-Black.otf in Resources */,
-				F3C9858A216A22C4004519B5 /* CircularStd-Book.otf in Resources */,
-				F3C98590216A22CB004519B5 /* CircularStd-Bold.otf in Resources */,
 				A194E96F2042BD77003493E2 /* Rectangle.jpg in Resources */,
 				A14089F0204EAC050009530F /* BigRectangle.jpg in Resources */,
-				F3C98593216A22CF004519B5 /* CircularStd-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

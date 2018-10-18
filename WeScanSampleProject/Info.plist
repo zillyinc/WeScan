@@ -43,10 +43,9 @@
 	</array>
     <key>UIAppFonts</key>
     <array>
-        <string>CircularStd-Black.otf</string>
-        <string>CircularStd-Bold.otf</string>
-        <string>CircularStd-Medium.otf</string>
-        <string>CircularStd-Book.otf</string>
+        <string>OpenSans-Regular.ttf</string>
+        <string>OpenSans-SemiBold.ttf</string>
+        <string>OpenSans-Bold.ttf</string>
     </array>
 </dict>
 </plist>

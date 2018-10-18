@@ -58,16 +58,15 @@ enum ZLFontWeight {
 
 extension UIFont {
     private static func zillyFont(size: CGFloat, weight: UIFont.Weight) -> UIFont {
-        let fontName: String
-        if weight.rawValue <= UIFont.Weight.regular.rawValue {
-            fontName = "CircularStd-Book"
-        } else if weight.rawValue <= UIFont.Weight.medium.rawValue {
-            fontName = "CircularStd-Medium"
-        } else if weight.rawValue <= UIFont.Weight.bold.rawValue {
-            fontName = "CircularStd-Bold"
-        } else {
-            fontName = "CircularStd-Black"
-        }
+        let fontName: String = {
+            if weight.rawValue <= UIFont.Weight.regular.rawValue {
+                return "OpenSans-Regular"
+            } else if weight.rawValue <= UIFont.Weight.medium.rawValue {
+                return "OpenSans-SemiBold"
+            } else {
+                return "OpenSans-Bold"
+            }
+        }()
         return UIFont(name: fontName, size: size)!
     }
 
