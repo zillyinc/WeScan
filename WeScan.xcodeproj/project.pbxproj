@@ -50,6 +50,12 @@
 		C31DD8A320C087D80072D439 /* ZoomGestureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31DD8A220C087D80072D439 /* ZoomGestureController.swift */; };
 		C3789C9B20CC69AD001B423F /* QuadrilateralViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3789C9A20CC69AD001B423F /* QuadrilateralViewTests.swift */; };
 		C3E2EB8E20B8970800A42E58 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E2EB8D20B8970800A42E58 /* UIImage+Utils.swift */; };
+		F31B05B3216A90F600A1D2A3 /* UILabel+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B05B2216A90F600A1D2A3 /* UILabel+Helper.swift */; };
+		F31B05B7216A95EF00A1D2A3 /* EditColorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F31B05B4216A95EF00A1D2A3 /* EditColorsViewController.xib */; };
+		F31B05B9216A95EF00A1D2A3 /* EditColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B05B5216A95EF00A1D2A3 /* EditColorsViewController.swift */; };
+		F3C98571216A1F16004519B5 /* UIFont+Tellus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C98570216A1F16004519B5 /* UIFont+Tellus.swift */; };
+		F3E91FEA217893C5004B4ADF /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E91FE621789287004B4ADF /* OpenSans-Bold.ttf */; };
+		F3E91FEB217893C8004B4ADF /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E91FE621789287004B4ADF /* OpenSans-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +144,13 @@
 		C31DD8A220C087D80072D439 /* ZoomGestureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomGestureController.swift; sourceTree = "<group>"; };
 		C3789C9A20CC69AD001B423F /* QuadrilateralViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadrilateralViewTests.swift; sourceTree = "<group>"; };
 		C3E2EB8D20B8970800A42E58 /* UIImage+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
+		F31B05B2216A90F600A1D2A3 /* UILabel+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Helper.swift"; sourceTree = "<group>"; };
+		F31B05B4216A95EF00A1D2A3 /* EditColorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditColorsViewController.xib; sourceTree = "<group>"; };
+		F31B05B5216A95EF00A1D2A3 /* EditColorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditColorsViewController.swift; sourceTree = "<group>"; };
+		F3C98570216A1F16004519B5 /* UIFont+Tellus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Tellus.swift"; sourceTree = "<group>"; };
+		F3E91FE621789287004B4ADF /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		F3E91FE721789287004B4ADF /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		F3E91FE821789287004B4ADF /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +234,7 @@
 		A1D4BCEE202C4F4100FCDDEC /* WeScan */ = {
 			isa = PBXGroup;
 			children = (
+				F3C98577216A21B7004519B5 /* Fonts */,
 				A1DF909F2031D89D00841A11 /* ImageScannerController.swift */,
 				A1DF90E220358C9E00841A11 /* Protocols */,
 				A1F22ECF203199E7001723AD /* Scan */,
@@ -263,6 +277,8 @@
 				A1DF90F52037187500841A11 /* UIImage+Orientation.swift */,
 				A1C4DD4D2044ADE600D36684 /* CGRect+Utils.swift */,
 				C3E2EB8D20B8970800A42E58 /* UIImage+Utils.swift */,
+				F3C98570216A1F16004519B5 /* UIFont+Tellus.swift */,
+				F31B05B2216A90F600A1D2A3 /* UILabel+Helper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -302,10 +318,22 @@
 		A1F22ED020319A03001723AD /* Edit */ = {
 			isa = PBXGroup;
 			children = (
+				F31B05B5216A95EF00A1D2A3 /* EditColorsViewController.swift */,
+				F31B05B4216A95EF00A1D2A3 /* EditColorsViewController.xib */,
 				A1F22ECD2031937E001723AD /* EditScanViewController.swift */,
 				C31DD8A220C087D80072D439 /* ZoomGestureController.swift */,
 			);
 			path = Edit;
+			sourceTree = "<group>";
+		};
+		F3C98577216A21B7004519B5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F3E91FE621789287004B4ADF /* OpenSans-Bold.ttf */,
+				F3E91FE821789287004B4ADF /* OpenSans-Regular.ttf */,
+				F3E91FE721789287004B4ADF /* OpenSans-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,6 +420,7 @@
 				TargetAttributes = {
 					A1D4BCB6202C4F3800FCDDEC = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					A1D4BCEC202C4F4100FCDDEC = {
@@ -433,6 +462,7 @@
 			files = (
 				A1D4BCC5202C4F3800FCDDEC /* LaunchScreen.storyboard in Resources */,
 				A1D4BCC2202C4F3800FCDDEC /* Assets.xcassets in Resources */,
+				F3E91FEB217893C8004B4ADF /* OpenSans-Bold.ttf in Resources */,
 				A1D4BCC0202C4F3800FCDDEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,7 +471,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31B05B7216A95EF00A1D2A3 /* EditColorsViewController.xib in Resources */,
 				A1265C822045BFEB009C4D3E /* Localizable.strings in Resources */,
+				F3E91FEA217893C5004B4ADF /* OpenSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,9 +554,12 @@
 				C31DD8A320C087D80072D439 /* ZoomGestureController.swift in Sources */,
 				A1C4DD4E2044ADE600D36684 /* CGRect+Utils.swift in Sources */,
 				A1DF90A420331A0B00841A11 /* RectangleDetector.swift in Sources */,
+				F31B05B3216A90F600A1D2A3 /* UILabel+Helper.swift in Sources */,
 				A1DF90F62037187500841A11 /* UIImage+Orientation.swift in Sources */,
 				A1F22E99202C7B66001723AD /* QuadrilateralView.swift in Sources */,
 				A194E97220431DD7003493E2 /* ReviewViewController.swift in Sources */,
+				F31B05B9216A95EF00A1D2A3 /* EditColorsViewController.swift in Sources */,
+				F3C98571216A1F16004519B5 /* UIFont+Tellus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,13 +734,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 67V847367C;
+				DEVELOPMENT_TEAM = UH9F5Z9972;
 				INFOPLIST_FILE = WeScanSampleProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeTransfer.WeScanSampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -716,13 +751,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 67V847367C;
+				DEVELOPMENT_TEAM = UH9F5Z9972;
 				INFOPLIST_FILE = WeScanSampleProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeTransfer.WeScanSampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -739,7 +774,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WeScan/Info.plist;
+				INFOPLIST_FILE = "WeScan/WeScan-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -747,7 +782,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -766,14 +801,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WeScan/Info.plist;
+				INFOPLIST_FILE = "WeScan/WeScan-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeTransfer.WeScan;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -787,7 +822,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67V847367C;
-				INFOPLIST_FILE = WeScanTests/Info.plist;
+				INFOPLIST_FILE = "WeScanTests/WeScan-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeTransfer.WeScanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -805,7 +840,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67V847367C;
-				INFOPLIST_FILE = WeScanTests/Info.plist;
+				INFOPLIST_FILE = "WeScanTests/WeScan-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeTransfer.WeScanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
