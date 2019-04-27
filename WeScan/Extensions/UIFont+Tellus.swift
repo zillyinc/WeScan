@@ -29,7 +29,6 @@ enum ZLFontWeight {
 }
 
 @objc enum ZLFontSize : Int, CaseIterable {
-    case size10 = 10
     case size12 = 12
     case size14 = 14
     case size17 = 17
@@ -43,7 +42,6 @@ enum ZLFontWeight {
 
     var lineHeight: CGFloat {
         switch self {
-        case .size10: return 10
         case .size12: return 12
         case .size14: return 18
         case .size17: return 22
@@ -58,16 +56,7 @@ enum ZLFontWeight {
 
 extension UIFont {
     private static func zillyFont(size: CGFloat, weight: UIFont.Weight) -> UIFont {
-        let fontName: String = {
-            if weight.rawValue <= UIFont.Weight.regular.rawValue {
-                return "OpenSans-Regular"
-            } else if weight.rawValue <= UIFont.Weight.medium.rawValue {
-                return "OpenSans-SemiBold"
-            } else {
-                return "OpenSans-Bold"
-            }
-        }()
-        return UIFont(name: fontName, size: size)!
+        return .systemFont(ofSize: size, weight: weight)
     }
 
     // Not @objc because it doesn't give a warning when passing the system constants (e.g. UIFontSizeBold)
@@ -95,9 +84,9 @@ extension UIFont {
 
     /// Tellus fonts by use
     @objc static func zillyLargeBoldTitle() -> UIFont { return UIFont.zillyFont(size: .size32, weight: .bold) }
-    @objc static func zillyCellDescription() -> UIFont { return UIFont.zillyFont(size: .size14) }
-    @objc static func zillyDetailLabelTitle() -> UIFont { return UIFont.zillyFont(size: .size12) }
-    @objc static func zillyMediumDetailLabelTitle() -> UIFont { return UIFont.zillyFont(size: .size12, weight: .medium) }
+    @objc static func zillyCellDescription() -> UIFont { return UIFont.zillyFont(size: .size12) }
+    @objc static func zillyDetailLabelTitle() -> UIFont { return UIFont.zillyFont(size: .size14) }
+    @objc static func zillyMediumDetailLabelTitle() -> UIFont { return UIFont.zillyFont(size: .size14, weight: .medium) }
     @objc static func zillyDefaultFontAndSize() -> UIFont { return UIFont.zillyFont(size: .size17) }
     @objc static func zillyDefaultSemiBoldFontAndSize() -> UIFont { return UIFont.zillyFont(size: .size17, weight: .bold) }
 }
