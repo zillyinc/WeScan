@@ -54,8 +54,6 @@
 		F31B05B7216A95EF00A1D2A3 /* EditColorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F31B05B4216A95EF00A1D2A3 /* EditColorsViewController.xib */; };
 		F31B05B9216A95EF00A1D2A3 /* EditColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B05B5216A95EF00A1D2A3 /* EditColorsViewController.swift */; };
 		F3C98571216A1F16004519B5 /* UIFont+Tellus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C98570216A1F16004519B5 /* UIFont+Tellus.swift */; };
-		F3E91FEA217893C5004B4ADF /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E91FE621789287004B4ADF /* OpenSans-Bold.ttf */; };
-		F3E91FEB217893C8004B4ADF /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E91FE621789287004B4ADF /* OpenSans-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,9 +146,6 @@
 		F31B05B4216A95EF00A1D2A3 /* EditColorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditColorsViewController.xib; sourceTree = "<group>"; };
 		F31B05B5216A95EF00A1D2A3 /* EditColorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditColorsViewController.swift; sourceTree = "<group>"; };
 		F3C98570216A1F16004519B5 /* UIFont+Tellus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Tellus.swift"; sourceTree = "<group>"; };
-		F3E91FE621789287004B4ADF /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		F3E91FE721789287004B4ADF /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		F3E91FE821789287004B4ADF /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,7 +229,6 @@
 		A1D4BCEE202C4F4100FCDDEC /* WeScan */ = {
 			isa = PBXGroup;
 			children = (
-				F3C98577216A21B7004519B5 /* Fonts */,
 				A1DF909F2031D89D00841A11 /* ImageScannerController.swift */,
 				A1DF90E220358C9E00841A11 /* Protocols */,
 				A1F22ECF203199E7001723AD /* Scan */,
@@ -324,16 +318,6 @@
 				C31DD8A220C087D80072D439 /* ZoomGestureController.swift */,
 			);
 			path = Edit;
-			sourceTree = "<group>";
-		};
-		F3C98577216A21B7004519B5 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				F3E91FE621789287004B4ADF /* OpenSans-Bold.ttf */,
-				F3E91FE821789287004B4ADF /* OpenSans-Regular.ttf */,
-				F3E91FE721789287004B4ADF /* OpenSans-SemiBold.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -462,7 +446,6 @@
 			files = (
 				A1D4BCC5202C4F3800FCDDEC /* LaunchScreen.storyboard in Resources */,
 				A1D4BCC2202C4F3800FCDDEC /* Assets.xcassets in Resources */,
-				F3E91FEB217893C8004B4ADF /* OpenSans-Bold.ttf in Resources */,
 				A1D4BCC0202C4F3800FCDDEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,7 +456,6 @@
 			files = (
 				F31B05B7216A95EF00A1D2A3 /* EditColorsViewController.xib in Resources */,
 				A1265C822045BFEB009C4D3E /* Localizable.strings in Resources */,
-				F3E91FEA217893C5004B4ADF /* OpenSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
